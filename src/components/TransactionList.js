@@ -1,6 +1,8 @@
-import React from 'react'
-
+import React,{useContext} from 'react'
+import {GlobalContext} from '../context/GlobalState'
 export const TransactionList = () => {
+    const context = useContext(GlobalContext);
+    
     return (
         <>
             <h3>History</h3>
